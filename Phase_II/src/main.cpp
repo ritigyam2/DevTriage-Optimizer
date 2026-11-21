@@ -40,9 +40,11 @@
 
 void print_header() {
     std::cout << "\n===============================================================================\n";
-    std::cout << "  AutoTriage-DAA (Project 50) | INTEGRATED PHASE II SYLLABUS WORKBENCH\n";
-    std::cout << "  Open Source Issue Triage and Developer Assignment Tool\n";
-    std::cout << "  Author: Ritigya Mishra | Course: Design and Analysis of Algorithms (C++17)\n";
+    std::cout << "  AutoTriage-DAA\n";
+    std::cout << "  Open Source Issue Triage and Developer Assignment Tool\n\n";
+    std::cout << "  Design and Analysis of Algorithms -- PBL (Project 50)\n";
+    std::cout << "  Developed by: Ritigya Mishra | SAP ID: 590028115 | Batch: B-9 (AI/ML)\n";
+    std::cout << "  Course: B.Tech-CSE\n";
     std::cout << "===============================================================================\n\n";
 }
 
@@ -256,7 +258,7 @@ int main() {
 
             ReductionProofResult red_res = ComplexityReductionWorkbench::verify_subset_sum_to_knapsack_reduction({3, 34, 4, 12, 5, 2}, 9);
             std::cout << "[COMPLEXITY REDUCTION] Subset-Sum <=_P 0/1 Knapsack: " 
-                      << (red_res.reduction_holds ? "FORMALLY VERIFIED (Q.E.D.)" : "INVALID") << "\n";
+                      << (red_res.reduction_holds ? "VERIFIED" : "INVALID") << "\n";
         } else if (choice == 8) {
             std::cout << "\n>>> MODULE 8: ONLINE STREAMING & ZERO-DAY PREEMPTION SIMULATION <<<\n";
             std::vector<StreamEvent> stream;

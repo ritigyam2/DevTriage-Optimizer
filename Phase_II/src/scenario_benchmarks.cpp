@@ -421,9 +421,11 @@ Scenario4Evidence run_scenario_4_real_world_and_online_streaming() {
 
 int main() {
     std::cout << "\n===============================================================================\n";
-    std::cout << "  AutoTriage-DAA (Project 50) | FOUR MANDATORY DEMONSTRATION SCENARIOS (C++17)\n";
-    std::cout << "  Fulfilling the Common Syllabus Implementation Standard & PBL Handbook\n";
-    std::cout << "  Author: Ritigya Mishra | Course: Design and Analysis of Algorithms\n";
+    std::cout << "  AutoTriage-DAA\n";
+    std::cout << "  Open Source Issue Triage and Developer Assignment Tool\n\n";
+    std::cout << "  Design and Analysis of Algorithms -- PBL (Project 50)\n";
+    std::cout << "  Developed by: Ritigya Mishra | SAP ID: 590028115 | Batch: B-9 (AI/ML)\n";
+    std::cout << "  Course: B.Tech-CSE\n";
     std::cout << "===============================================================================\n";
 
     Scenario1Evidence ev1 = run_scenario_1_normal();
@@ -457,7 +459,7 @@ int main() {
     }
 
     std::cout << "===============================================================================\n";
-    std::cout << "  ALL FOUR DEMONSTRATION SCENARIOS EXECUTED & BENCHMARKED SUCCESSFULLY!\n";
+    std::cout << "  Benchmark summary: 4/4 demonstration scenarios completed successfully.\n";
     std::cout << "===============================================================================\n\n";
     return 0;
 }

@@ -71,7 +71,7 @@ public:
         result.reduction_proof_log += "2. Bidirectional Equivalence Check:\n";
         result.reduction_proof_log += "   Subset-Sum instance YES? " + std::string(result.subset_sum_has_solution ? "YES" : "NO") + "\n";
         result.reduction_proof_log += "   Transformed Knapsack instance YES? " + std::string(result.knapsack_has_solution ? "YES" : "NO") + "\n";
-        result.reduction_proof_log += "   Reduction Preserves Decision: " + std::string(result.reduction_holds ? "VALID (Q.E.D.)" : "INVALID") + "\n";
+        result.reduction_proof_log += "   Reduction Preserves Decision: " + std::string(result.reduction_holds ? "VALID" : "INVALID") + "\n";
 
         return result;
     }

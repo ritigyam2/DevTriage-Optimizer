@@ -1,0 +1,3 @@
+id,title,severity,estimated_hours,business_value,deadline_day,required_skills,prerequisites
+1,Circular Dependency A,3,8,50.0,5,Kernel,2
+2,Circular Dependency B,3,8,50.0,5,Kernel,1

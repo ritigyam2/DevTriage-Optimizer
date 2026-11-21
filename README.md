@@ -1,7 +1,7 @@
 # Project 50: Open Source Issue Triage and Developer Assignment Tool (AutoTriage)
 
-**University-Topper Reference Implementation for Design and Analysis of Algorithms (DAA)**  
-**Evaluation Target:** Phase I (25 Marks) + Phase II (50 Marks) = 75 / 75 Marks (100% Score)  
+**Project Implementation for Design and Analysis of Algorithms (DAA)**  
+**Evaluation Target:** Phase I (25 Marks) + Phase II (50 Marks) = 75 / 75 Marks (Full Compliance)  
 **Curriculum Alignment:** Complete 46-Lecture DAA Syllabus (Units I through VI)  
 **Strict Policy:** 100% Offline, Zero External Core Algorithm Libraries, Clean Standard C++14/C++17  
 
@@ -19,7 +19,7 @@ Incoming issue tickets must be categorized, prioritized, and matched against mai
 DAA PROJECT/
 │
 ├── README.md                                              <-- [Root Project Navigation & Build Guide]
-├── PROJECT_50_TOPPER_PROJECT_PLAN_AND_ARCHITECTURE_GUIDE.docx <-- [Official Word Document (38 Tables/Callouts)]
+├── PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx <-- [Official Word Document (38 Tables/Callouts)]
 │
 ├── Phase_I/                                               <-- [Phase I Frozen Package - 25 Marks]
 │   ├── proposal.md                                        <-- Formal Approved 1-Page Proposal
@@ -161,7 +161,7 @@ cd Phase_II
 ---
 
 ## 5. Documentation & Viva Preparation
-- **Comprehensive Project Guide:** `PROJECT_50_TOPPER_PROJECT_PLAN_AND_ARCHITECTURE_GUIDE.docx`
+- **Comprehensive Project Guide:** `PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx`
 - **Formal Academic Report:** `Phase_II/docs/final_report.md`
 - **Oral Viva & Live Coding Toolkit:** `Phase_II/docs/viva_defense_toolkit.md` (Includes 7 five-minute coding templates, 5 paper worksheets, 25 high-difficulty viva Q&As, and 10 unseen live modification solutions).
 

@@ -150,7 +150,7 @@ int main() {
     test_celebrity_problem();
 
     std::cout << "\n=================================================================\n";
-    std::cout << "  ALL CHUNK 2 TESTS PASSED FLAWLESSLY! (100% SUCCESS RATE)\n";
+    std::cout << "  Test summary: 4/4 tests passed.\n";
     std::cout << "=================================================================\n\n";
     return 0;
 }

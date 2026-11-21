@@ -1,0 +1,4 @@
+id,title,severity,estimated_hours,business_value,deadline_day,required_skills,prerequisites
+1,Single critical issue with exact capacity match,5,40,100.0,1,Kernel;C++,
+2,Zero priority task,1,1,0.0,30,Docs,
+3,Maximum effort task,5,1000,999.0,1,Security;C++,

@@ -191,7 +191,7 @@ int main() {
     test_kruskal_and_prim_mst();
 
     std::cout << "\n=================================================================\n";
-    std::cout << "  ALL CHUNK 3 TESTS PASSED FLAWLESSLY! (100% SUCCESS RATE)\n";
+    std::cout << "  Test summary: 6/6 tests passed.\n";
     std::cout << "=================================================================\n\n";
     return 0;
 }

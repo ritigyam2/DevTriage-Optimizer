@@ -1,0 +1,188 @@
+# Project 50: Open Source Issue Triage and Developer Assignment Tool (AutoTriage)
+
+**Design and Analysis of Algorithms (DAA - PBL)**  
+**Author:** Ritigya Mishra | **SAP ID:** 590028115 | **Batch:** B-9 (AI/ML) | **Course:** B.Tech-CSE  
+**Evaluation Standard:** Phase I (25 Marks) + Phase II (50 Marks) = 75 Marks  
+**Curriculum Alignment:** Complete 46-Lecture DAA Syllabus (Units I through VI)  
+**Strict Policy:** 100% Offline, Zero External Core Algorithm Libraries, Strict ISO C++17 Standard  
+
+---
+
+## 1. Executive Summary & Architecture Overview
+
+AutoTriage is an offline software engineering triage and developer assignment decision system designed to solve the multidimensional triage bottleneck in open-source ecosystems.
+
+Incoming issue tickets must be categorized, prioritized, and matched against maintainer skill vectors, working capacities, and dependency constraints. AutoTriage implements **28 distinct first-principles algorithms** spanning all standard algorithmic paradigms to perform automated triage, optimal developer assignment, dependency risk analysis, and crash signature mining.
+
+### Dual-Phase Project Organization
+
+```
+AutoTriage-DAA/
+│
+├── README.md                                  <-- Root project navigation and build guide
+├── DECLARATION.pdf                            <-- Signed originality and offline compliance document
+│
+├── docs/                                      <-- Complete academic evaluation documentation
+│   ├── final_report.md                        <-- Formal academic technical report with complexity proofs & ethics
+│   ├── viva_defense_toolkit.md                <-- 5-min live coding templates, paper traces & 25 viva Q&As
+│   ├── TEST_CASE_TABLE.md                     <-- 27 automated test suites with verification criteria
+│   ├── LIVE_DEMONSTRATION_SCRIPT.md           <-- Faculty evaluation live demo execution script
+│   ├── DATASET_PROVENANCE_AND_LICENSES.md     <-- Data provenance & synthetic benchmark specification
+│   ├── DECLARATION_OF_ORIGINALITY.md          <-- Markdown source of academic declaration
+│   └── PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx <-- Master evaluation dossier
+│
+├── screenshots/                               <-- Benchmark execution and test run terminal logs
+│
+├── Phase_I/                                   <-- Phase I Baseline Package (25 Marks)
+│   ├── CMakeLists.txt                         <-- CMake build script (CMAKE_CXX_STANDARD 17)
+│   ├── Makefile                               <-- Offline GNU Makefile (-std=c++17)
+│   ├── README.md                              <-- Phase I specification and quick start
+│   ├── proposal.md                            <-- Approved 1-page proposal
+│   ├── include/                               <-- Header-only core engine
+│   │   ├── models.hpp                         <-- Issue & Developer entity structs
+│   │   ├── parser.hpp                         <-- Defensive CSV parser with 3-color DFS cycle check
+│   │   ├── sorting.hpp                        <-- Merge Sort, Quick Sort (3 Pivots), Binary Search
+│   │   └── matching.hpp                       <-- Kuhn's DFS augmenting path vs Greedy matching
+│   ├── src/main.cpp                           <-- Phase I interactive terminal application
+│   ├── tests/test_runner.cpp                  <-- Phase I automated test suite (7 suites passed)
+│   └── data/                                  <-- Normal, boundary, invalid, and cyclic datasets
+│
+└── Phase_II/                                  <-- Phase II Extended Workbench (50 Marks)
+    ├── CMakeLists.txt                         <-- Phase II build automation (C++17)
+    ├── Makefile                               <-- Phase II multi-target GNU Makefile (-std=c++17)
+    ├── README.md                              <-- Complete Phase II algorithmic specification
+    ├── scenario_benchmark_results.csv         <-- Dynamically exported benchmark metrics (4 scenarios)
+    ├── assignment_plan_report.csv             <-- Exported triage backlog and assignment report
+    ├── data/
+    │   ├── synthetic_enterprise_issues.csv    <-- 120 synthetic enterprise defect issues
+    │   └── synthetic_enterprise_developers.csv<-- 16 maintainers with diverse skill matrices
+    ├── include/
+    │   ├── core/                              <-- Models, parser, sorting, visualizer, reductions, report exporter
+    │   └── algorithms/                        <-- Divide & Conquer, Greedy, DP, Backtracking, B&B, Flow, Strings, CRT, Online Streaming
+    ├── src/
+    │   ├── main.cpp                           <-- Interactive 11-module CLI workbench
+    │   └── scenario_benchmarks.cpp            <-- 4 demonstration scenarios runner
+    └── tests/                                 <-- Exhaustive chunk test suites (Chunks 2–6)
+```
+
+---
+
+## 2. 46-Lecture Curriculum Mapping (Units I to VI)
+
+AutoTriage maps each lecture from the DAA curriculum to a specific module in `Phase_II`:
+
+| DAA Unit | Syllabus Lecture Topic | Core Algorithm Implemented | File Reference |
+| :--- | :--- | :--- | :--- |
+| **Unit I** | L1–L3: Analysis of Algorithms | Asymptotic Bound Formalism ($O, \Omega, \Theta$) | `Phase_II/include/core/models.hpp` |
+| **Unit I** | L4–L6: Divide & Conquer, Merge Sort | Merge Sort (Recursive & Bottom-Up) | `Phase_II/include/core/sorting.hpp` |
+| **Unit I** | L7–L8: Quick Sort & Partitioning | Quick Sort (Median-of-3, Random, First) | `Phase_II/include/core/sorting.hpp` |
+| **Unit I** | L9–L10: Strassen's Matrix Multiplication | Classical $O(n^3)$ vs Strassen $O(n^{2.807})$ | `Phase_II/include/algorithms/divide_and_conquer/strassen.hpp` |
+| **Unit I** | L11: Maximum Subarray Analysis | Kadane $O(n)$ vs D&C $O(n \log n)$ | `Phase_II/include/algorithms/divide_and_conquer/max_subarray.hpp` |
+| **Unit I** | L12: Fast Power & Celebrity Problem | Binary Exponentiation & 2-Pointer Elimination | `Phase_II/include/algorithms/divide_and_conquer/fast_power.hpp`, `celebrity.hpp` |
+| **Unit II** | L13–L14: Greedy Method & Knapsack | Fractional Knapsack (Value-Density) | `Phase_II/include/algorithms/greedy/fractional_knapsack.hpp` |
+| **Unit II** | L15–L16: Activity Selection & Scheduling | Interval Scheduling & Server Partitioning | `Phase_II/include/algorithms/greedy/activity_selection.hpp`, `interval_partitioning.hpp` |
+| **Unit II** | L17–L18: Huffman Codes & Compression | Optimal Prefix-Free Tree & Bitstream Encoding | `Phase_II/include/algorithms/greedy/huffman.hpp` |
+| **Unit II** | L19–L20: Single-Source Shortest Paths | Dijkstra's Algorithm with Min-Heap | `Phase_II/include/algorithms/greedy/dijkstra.hpp` |
+| **Unit II** | L21–L22: Minimum Spanning Trees | Kruskal's MST (DSU) & Prim's MST (Min-Heap) | `Phase_II/include/algorithms/greedy/mst.hpp` |
+| **Unit III** | L23–L24: Dynamic Programming & Knapsack | 0/1 Knapsack 2D Table & 1D Space-Optimized Array | `Phase_II/include/algorithms/dynamic_programming/knapsack_01.hpp` |
+| **Unit III** | L25–L26: Matrix Chain Multiplication | DP MCM $\Theta(n^3)$ with Optimal Parens Recovery | `Phase_II/include/algorithms/dynamic_programming/matrix_chain.hpp` |
+| **Unit III** | L27–L28: Longest Common Subsequence | LCS Matrix with Subsequence Backtracking | `Phase_II/include/algorithms/dynamic_programming/lcs.hpp` |
+| **Unit III** | L29–L30: Optimal Binary Search Trees | Dynamic Programming OBST $\Theta(n^3)$ | `Phase_II/include/algorithms/dynamic_programming/obst.hpp` |
+| **Unit III** | L31–L32: Shortest Paths & Negative Cycles | Bellman-Ford $\Theta(VE)$ & Floyd-Warshall $\Theta(V^3)$ | `Phase_II/include/algorithms/dynamic_programming/bellman_ford.hpp`, `floyd_warshall.hpp` |
+| **Unit III** | L33: Traveling Salesperson Problem | Held-Karp Bitmask DP $\Theta(n^2 2^n)$ | `Phase_II/include/algorithms/dynamic_programming/tsp_held_karp.hpp` |
+| **Unit IV** | L34–L35: Backtracking & N-Queens | N-Queens Constraint Satisfaction Solver | `Phase_II/include/algorithms/backtracking_bb/n_queens.hpp` |
+| **Unit IV** | L36–L37: Sum of Subsets & Knapsack | Feasibility & Fractional Bound DFS Pruning | `Phase_II/include/algorithms/backtracking_bb/sum_of_subsets.hpp`, `knapsack_backtracking.hpp` |
+| **Unit IV** | L38–L40: Branch and Bound Strategies | FIFO vs LIFO vs Least-Cost (LC) B&B + TSP B&B | `Phase_II/include/algorithms/backtracking_bb/knapsack_branch_and_bound.hpp`, `tsp_branch_and_bound.hpp` |
+| **Unit V** | L41–L42: Maximum Flow & Matching | Edmonds-Karp Flow $O(V E^2)$ & Bipartite Reduction | `Phase_II/include/algorithms/flow_matching/ford_fulkerson.hpp`, `bipartite_matching.hpp` |
+| **Unit V** | L43: Number Theory & Modular Arithmetic | Chinese Remainder Theorem via Extended Euclidean | `Phase_II/include/algorithms/number_theory/crt.hpp` |
+| **Unit VI** | L44–L45: String Matching Automata | 4-Way Suite: Naive, Rabin-Karp, DFA, KMP | `Phase_II/include/algorithms/string_matching/string_matchers.hpp` |
+| **Unit VI** | L46: Complexity Theory & Reductions | Polynomial Reduction ($\text{Subset-Sum} \le_P \text{Knapsack}$) | `Phase_II/include/core/complexity_reductions.hpp` |
+
+---
+
+## 3. Quickstart: Building & Running
+
+### Prerequisites
+- Operating System: Windows / Linux / macOS
+- Compiler: GCC/MinGW (g++ supporting `-std=c++17` or higher)
+- Build System: `make` or `cmake` (or direct compilation commands)
+
+### 3.1 Phase I: Build & Execute
+```bash
+# Navigate to Phase I directory
+cd Phase_I
+
+# Compile using GNU Make
+make
+
+# Or compile directly with g++
+g++ -std=c++17 -O3 -Wall -Wextra -Iinclude src/main.cpp -o main.exe
+g++ -std=c++17 -O3 -Wall -Wextra -Iinclude tests/test_runner.cpp -o test_runner.exe
+
+# Run the automated test suite (7/7 suites passed)
+./test_runner.exe
+
+# Launch the interactive CLI
+./main.exe
+```
+
+### 3.2 Phase II: Build & Execute All Algorithmic Modules
+```bash
+# Navigate to Phase II directory
+cd Phase_II
+
+# Compile all binaries using GNU Make
+make
+
+# Or run tests directly
+make test
+
+# Launch the full interactive 11-module workbench
+./main.exe
+
+# Execute the 4 Demonstration Stress & Real-World Scenarios
+./scenario_benchmarks.exe
+```
+
+### 3.3 Running Individual Paradigm Test Suites
+```bash
+cd Phase_II
+./test_chunk2_dnc.exe                 # Divide & Conquer Test Suite (4/4 passed)
+./test_chunk3_greedy.exe              # Greedy Algorithms Test Suite (6/6 passed)
+./test_chunk4_dp.exe                  # Dynamic Programming Test Suite (7/7 passed)
+./test_chunk5_backtracking_bb.exe     # Backtracking & Branch and Bound Suite (5/5 passed)
+./test_chunk6_flow_strings_crt.exe    # Flow, Strings, CRT & Reduction Suite (5/5 passed)
+```
+
+---
+
+## 4. Key Empirical Findings
+
+1. **Least-Cost (LC) Branch & Bound Dominance:**
+   On identical 0/1 Knapsack instances, Least-Cost B&B expanded only **8 nodes**, compared to **15 nodes** for FIFO (BFS) and **9 nodes** for LIFO (DFS), empirically verifying that best-first upper-bounding minimizes search tree exploration.
+2. **Adversarial Resilience:**
+   On pre-sorted inputs ($N=5,000$), Median-of-3 pivoting completed in **60,678 comparisons** (Merge Sort: **51,420 comparisons**), successfully mitigating quadratic degradation.
+3. **Linear String Search on Pathological Logs:**
+   On a $50,001$-character repetitive log (`AAAA...AB`), Naive search required **299,976 comparisons**, whereas Knuth-Morris-Pratt (KMP) scanned the text in **100,005 operations** with **zero pointer backtracks**.
+4. **Bipartite Matching Optimality:**
+   Under 1-to-1 matching semantics, Kuhn's DFS Augmenting Path algorithm achieved **10/10 developers utilized (100%)** and **10/50 issues assigned (20%)**, finding augmenting paths where greedy heuristics fail on specialized skill sets.
+5. **Dynamic Online Streaming:**
+   On the 120-issue synthetic enterprise workload, the streaming triage engine achieved an empirical competitive ratio of **1.0000** with **7 zero-day emergency preemptions** logged.
+
+---
+
+## 5. Documentation & Viva Preparation
+- **Master Evaluation Dossier:** `docs/PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx`
+- **Formal Academic Report:** `docs/final_report.md`
+- **Oral Viva & Live Coding Toolkit:** `docs/viva_defense_toolkit.md` (Includes 7 five-minute coding templates, 5 paper worksheets, 25 viva Q&As, and 10 unseen live modification solutions).
+- **Test Case Table:** `docs/TEST_CASE_TABLE.md` (Full specification of all 27 automated test suites).
+- **Faculty Live Demo Script:** `docs/LIVE_DEMONSTRATION_SCRIPT.md`.
+- **Dataset Provenance & Licenses:** `docs/DATASET_PROVENANCE_AND_LICENSES.md`.
+
+---
+
+## 6. Academic Compliance Statement
+This project strictly adheres to university project guidelines:
+- Zero external libraries used for core algorithm mechanics (all sorting routines, heaps, dynamic programming tables, augmenting path traversals, and prefix automata are coded from first principles).
+- 100% offline self-contained codebase.
+- Verified compilation under standard compiler flags: `-std=c++17 -O3 -Wall -Wextra` with **zero warnings**.
