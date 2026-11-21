@@ -866,7 +866,7 @@ def build_presentation():
     for b_p, s_t in suites_info:
         p = tf_s9r.add_paragraph()
         r1 = p.add_run()
-        r1.text = "✓ " + b_p
+        r1.text = "[PASS] " + b_p
         r1.font.bold = True
         r1.font.size = Pt(9)
         r1.font.color.rgb = C_GREEN
