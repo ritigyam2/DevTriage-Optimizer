@@ -42,11 +42,6 @@ To maintain industrial relevance while fulfilling 100% of the academic syllabus 
 2. **Tier 2: Pedagogical Curriculum Workbench:**
    - Provides first-principles implementations for all advanced syllabus modules (Strassen Matrix Multiplication, Held-Karp TSP Bitmask DP, N-Queens Backtracking, Sum of Subsets, Chinese Remainder Theorem, and NP-Completeness Polynomial Reductions).
    - Serves as an academic experimentation platform to empirically validate theoretical asymptotic bounds and state-space pruning ratios.
-   - **Dynamic Streaming & Preemption:** Online Bipartite Matching with Karp-Vazirani-Vazirani (KVV) competitive analysis ($CR \ge 1 - 1/e \approx 0.632$) and zero-day P0 task preemption.
-   - **Text Mining & Diagnostics:** Knuth-Morris-Pratt (KMP) linear scan and Huffman telemetry compression.
-2. **Tier 2: Pedagogical Curriculum Workbench:**
-   - Provides first-principles implementations for all advanced syllabus modules (Strassen Matrix Multiplication, Held-Karp TSP Bitmask DP, N-Queens Backtracking, Sum of Subsets, Chinese Remainder Theorem, and NP-Completeness Polynomial Reductions).
-   - Serves as an academic experimentation platform to empirically validate theoretical asymptotic bounds and state-space pruning ratios.
 
 ---
 
