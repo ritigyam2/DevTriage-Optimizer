@@ -1031,94 +1031,84 @@ def build_pdf_report():
     story.append(PageBreak())
 
     # ==========================================
-    # PAGES 19–26: APPENDIX: TERMINAL SCREENSHOT GALLERY
+    # PAGES 19–25: APPENDIX: TERMINAL SCREENSHOT GALLERY
     # ==========================================
     story.append(Paragraph("APPENDIX: TERMINAL SCREENSHOT GALLERY", h1_style))
     story.append(HRFlowable(width="100%", thickness=1, color=c_primary, spaceBefore=2, spaceAfter=8))
-    story.append(Paragraph("This appendix documents the live execution of AutoTriage-DAA under ISO C++17 via 16 high-resolution terminal captures. "
+    story.append(Paragraph("This appendix documents the live offline execution of AutoTriage-DAA under ISO C++17 via 14 high-resolution terminal captures. "
                            "Each entry details the binary invoked, commands issued, theoretical invariants tested, and verified empirical telemetry.", body_style))
     story.append(Spacer(1, 6))
 
     screenshots_info = [
-        ("screenshots/01_main_menu.png", 
-         "Figure 1: Main Interactive CLI Menu (Student Author & Modules 1–11)",
-         "Binary: Phase_I/main.exe | Menu Selection Interface",
+        ("screenshots/01_project_startup.png", 
+         "Figure 1: Project Startup & Interactive Workbench CLI (Student Author & Modules 1–11)",
+         "Binary: Phase_II/main.exe | Menu Selection Interface",
          "Displays verified student authorship banner (Ritigya Mishra, SAP ID: 590028115, Batch B-9 AI/ML), C++17 compiler confirmation, and all 11 interactive triage modules."),
         
-        ("screenshots/02_backlog_sorting.png", 
+        ("screenshots/02_backlog_triage.png", 
          "Figure 2: Module 1 Multi-Key Merge Sort Backlog Triage & Telemetry",
-         "Binary: Phase_I/main.exe | Submenu: [1] Prioritize Backlog",
+         "Binary: Phase_II/main.exe | Submenu: [1] Prioritize Backlog",
          "Demonstrates stable three-tier sorting (Severity descending, Deadline ascending, ID tie-breaking) over incoming tickets with microsecond telemetry."),
         
-        ("screenshots/03_developer_assignment.png", 
+        ("screenshots/03_assignment_comparison.png", 
          "Figure 3: Module 2 Developer Bipartite Assignment via Kuhn Augmenting Paths",
-         "Binary: Phase_I/main.exe | Submenu: [2] Match Developers",
+         "Binary: Phase_II/main.exe | Submenu: [2] Match Developers",
          "Executes Kuhn's augmenting path algorithm ($O(V \\cdot E)$), reporting developer match status, skill coverage verification, and residual capacity."),
         
         ("screenshots/04_knapsack_comparison.png", 
          "Figure 4: Module 3 Sprint Release Optimization (0/1 DP vs LC Branch & Bound)",
-         "Binary: Phase_I/main.exe | Submenu: [3] Optimize Sprint Release",
+         "Binary: Phase_II/main.exe | Submenu: [3] Optimize Sprint Release",
          "Computes discrete release subset under 120-hour sprint budget, comparing 2D dynamic programming against Least-Cost Branch and Bound and Fractional relaxation."),
         
-        ("screenshots/05_invalid_input_validation.png", 
-         "Figure 5: Defensive CSV Parser Trapping Out-of-Range Severity Bounds",
-         "Binary: Phase_I/test_runner.exe | Suite: Invalid CSV Ingestion",
-         "Validates RFC 4180 parsing robustness, intercepting corrupted issue records (severity 9 > 5, negative workload effort) with zero crashes or buffer overruns."),
+        ("screenshots/05_invalid_input.png", 
+         "Figure 5: Defensive CSV Parser Trapping Out-of-Range Bounds & 3-Color DFS Cycle",
+         "Binary: Phase_I/test_runner.exe | Suites: Invalid CSV & Dependency Cycle Trapping",
+         "Validates RFC 4180 parsing robustness, intercepting out-of-range severity (sev=9 > 5) and trapping circular prerequisite back-edges without stack overflow."),
         
-        ("screenshots/06_cycle_detection.png", 
-         "Figure 6: 3-Color DFS Graph Trapping Circular Prerequisite Backlog",
-         "Binary: Phase_I/test_runner.exe | Suite: Dependency Cycle Trapping",
-         "Constructs adjacency list and executes 3-color DFS traversal, successfully trapping back-edge on circular backlog (Issue #1 <-> #2) without stack overflow."),
-        
-        ("screenshots/07_phase1_tests.png", 
-         "Figure 7: Phase I Automated Test Harness (All 7 Test Suites Passing)",
-         "Binary: Phase_I/test_runner.exe | Complete Phase I Harness",
-         "Executes 7 automated suites covering sorting stability, bipartite matching optimality, binary search, boundary ingestion, and cycle trapping (7/7 Passed)."),
-        
-        ("screenshots/08_divide_conquer_tests.png", 
-         "Figure 8: Unit II Divide & Conquer Automated Test Suite (Chunk 2)",
+        ("screenshots/06_divide_conquer_tests.png", 
+         "Figure 6: Unit II Divide & Conquer Automated Test Suite (Chunk 2: 4/4 Passed)",
          "Binary: Phase_II/test_chunk2_dnc.exe | Unit II Test Harness",
          "Validates Strassen 4x4 matrix multiplication ($O(n^{2.807})$), Kadane maximum subarray churn, fast power ($2^{10}=1024$), and celebrity identification in 12 checks (4/4 Passed)."),
         
-        ("screenshots/09_greedy_tests.png", 
-         "Figure 9: Unit III Greedy Methods Automated Test Suite (Chunk 3)",
+        ("screenshots/07_greedy_tests.png", 
+         "Figure 7: Unit III Greedy Methods Automated Test Suite (Chunk 3: 6/6 Passed)",
          "Binary: Phase_II/test_chunk3_greedy.exe | Unit III Test Harness",
          "Validates Fractional Knapsack ($240 for 50h), Activity Selection (4 non-overlapping reviews), Interval Partitioning (3 CI servers), Huffman Coding (2.007x ratio), Dijkstra, and Kruskal vs Prim MST (6/6 Passed)."),
         
-        ("screenshots/10_dp_tests.png", 
-         "Figure 10: Unit IV Dynamic Programming Automated Test Suite (Chunk 4)",
+        ("screenshots/08_dp_tests.png", 
+         "Figure 8: Unit IV Dynamic Programming Automated Test Suite (Chunk 4: 7/7 Passed)",
          "Binary: Phase_II/test_chunk4_dp.exe | Unit IV Test Harness",
          "Validates 0/1 Knapsack 2D vs 1D ($220), MCM (30,000 mults), LCS ('BCBA' 61.5% similarity), OBST (cost 1.9), Bellman-Ford negative cycles, Floyd-Warshall blast radius, and Held-Karp TSP (7/7 Passed)."),
         
-        ("screenshots/11_backtracking_tests.png", 
-         "Figure 11: Unit V Backtracking & Branch and Bound Test Suite (Chunk 5)",
+        ("screenshots/09_backtracking_tests.png", 
+         "Figure 9: Unit V Backtracking & Branch and Bound Test Suite (Chunk 5: 5/5 Passed)",
          "Binary: Phase_II/test_chunk5_backtracking_bb.exe | Unit V Test Harness",
          "Validates N-Queens (N=4: 2 solns, N=8: 92 solns), Sum of Subsets, Knapsack Backtracking, Knapsack B&B (FIFO vs LIFO vs LC, LC prunes most), and TSP B&B (cost 80, 5 pruned) (5/5 Passed)."),
         
-        ("screenshots/12_flow_string_tests.png", 
-         "Figure 12: Unit VI Flow, Strings, CRT & Complexity Reductions (Chunk 6)",
+        ("screenshots/10_flow_string_tests.png", 
+         "Figure 10: Unit VI Flow, Strings, CRT & Complexity Reductions (Chunk 6: 5/5 Passed)",
          "Binary: Phase_II/test_chunk6_flow_strings_crt.exe | Unit VI Test Harness",
          "Validates Edmonds-Karp Max Flow (19.0), Bipartite Flow Matching, Chinese Remainder Theorem ($x=23 \\pmod{105}$), 4-Way String Matchers, and Subset-Sum $\\le_P$ Knapsack reduction (5/5 Passed)."),
         
-        ("screenshots/13_scenario_normal.png", 
-         "Figure 13: Scenario 1 — Normal Sprint Operation (Balanced Backlog)",
+        ("screenshots/11_scenario_normal.png", 
+         "Figure 11: Scenario 1 — Normal Sprint Operation (Balanced Backlog Allocation)",
          "Binary: Phase_II/scenario_benchmarks.exe | Scenario 1 Runner",
          "Validates normal sprint allocation: 10/10 developers utilized (100%), 10/50 issues assigned (20%), and 0/1 Knapsack achieves 1,244 business value points under 120-hour budget."),
         
-        ("screenshots/14_capacity_shock.png", 
-         "Figure 14: Scenario 2 — Emergency Capacity Shock (B&B Pruning & Reroute)",
+        ("screenshots/12_capacity_shock.png", 
+         "Figure 12: Scenario 2 — Emergency Capacity Shock (B&B Pruning & Dijkstra Bypass)",
          "Binary: Phase_II/scenario_benchmarks.exe | Scenario 2 Runner",
          "Demonstrates 50% capacity reduction: both DP and LC B&B achieve discrete optimum of 730 points, LC B&B prunes 20 nodes, and Dijkstra computes bypass path with cost 29.0."),
         
-        ("screenshots/15_adversarial_benchmark.png", 
-         "Figure 15: Scenario 3 — Adversarial Quick Sort Pivot Defense & Pathological KMP",
+        ("screenshots/13_adversarial_test.png", 
+         "Figure 13: Scenario 3 — Adversarial Quick Sort Pivot Defense & Pathological KMP",
          "Binary: Phase_II/scenario_benchmarks.exe | Scenario 3 Runner",
          "Stress tests adversarial inputs: Median-of-3 Quick Sort executes in 60,678 comparisons vs Merge Sort 51,420; KMP scans 50,001-character pathological log in 100,005 ops (zero backtracks)."),
         
-        ("screenshots/16_streaming_simulation.png", 
-         "Figure 16: Scenario 4 — Synthetic Enterprise Workload & Preemptive Streaming",
-         "Binary: Phase_II/scenario_benchmarks.exe | Scenario 4 Runner",
-         "Simulates dynamic event streaming across 120 synthetic enterprise defects: achieves empirical Competitive Ratio of 1.0000 and executes 7 immediate zero-day task preemptions."),
+        ("screenshots/14_final_test_summary.png", 
+         "Figure 14: Master Test Verification Summary (All 27 Test Suites & 4 Scenarios Passed)",
+         "Master Verification Harness | All 6 Test Executables Executed",
+         "Comprehensive quality assurance verification displaying 100% pass rate across all 27 test suites and 4 demonstration scenarios under strict ISO C++17."),
     ]
 
     # Pair screenshots 2 per page for clean, professional layout

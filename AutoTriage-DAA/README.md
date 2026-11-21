@@ -20,44 +20,36 @@ Incoming issue tickets must be categorized, prioritized, and matched against mai
 AutoTriage-DAA/
 │
 ├── README.md                                  <-- Root project navigation and build guide
-├── DECLARATION.pdf                            <-- Signed originality and offline compliance document
+├── CMakeLists.txt                             <-- Root CMake build automation (enforces C++17)
+├── Makefile                                   <-- Root GNU Makefile (multi-phase build)
 │
-├── docs/                                      <-- Complete academic evaluation documentation
-│   ├── final_report.md                        <-- Formal academic technical report with complexity proofs & ethics
-│   ├── viva_defense_toolkit.md                <-- 5-min live coding templates, paper traces & 25 viva Q&As
-│   ├── TEST_CASE_TABLE.md                     <-- 27 automated test suites with verification criteria
-│   ├── LIVE_DEMONSTRATION_SCRIPT.md           <-- Faculty evaluation live demo execution script
-│   ├── DATASET_PROVENANCE_AND_LICENSES.md     <-- Data provenance & synthetic benchmark specification
-│   ├── DECLARATION_OF_ORIGINALITY.md          <-- Markdown source of academic declaration
-│   └── PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx <-- Master evaluation dossier
-│
-├── screenshots/                               <-- Benchmark execution and test run terminal logs
-│
-├── Phase_I/                                   <-- Phase I Baseline Package (25 Marks)
+├── Phase_I/                                   <-- Phase I Baseline Engine (25 Marks)
 │   ├── CMakeLists.txt                         <-- CMake build script (CMAKE_CXX_STANDARD 17)
 │   ├── Makefile                               <-- Offline GNU Makefile (-std=c++17)
-│   ├── README.md                              <-- Phase I specification and quick start
-│   ├── proposal.md                            <-- Approved 1-page proposal
-│   ├── include/                               <-- Header-only core engine
-│   │   ├── models.hpp                         <-- Issue & Developer entity structs
-│   │   ├── parser.hpp                         <-- Defensive CSV parser with 3-color DFS cycle check
-│   │   ├── sorting.hpp                        <-- Merge Sort, Quick Sort (3 Pivots), Binary Search
-│   │   └── matching.hpp                       <-- Kuhn's DFS augmenting path vs Greedy matching
-│   ├── src/main.cpp                           <-- Phase I interactive terminal application
-│   ├── tests/test_runner.cpp                  <-- Phase I automated test suite (7 suites passed)
-│   └── data/                                  <-- Normal, boundary, invalid, and cyclic datasets
+│   ├── include/                               <-- Header-only core engine (models, parser, sorting, matching)
+│   ├── src/main.cpp                           <-- Phase I interactive CLI application
+│   ├── tests/test_runner.cpp                  <-- Phase I automated test suite (7/7 passed)
+│   └── data/                                  <-- Normal, boundary, invalid, and cyclic CSV datasets
 │
-└── Phase_II/                                  <-- Phase II Extended Workbench (50 Marks)
-    ├── CMakeLists.txt                         <-- Phase II build automation (C++17)
-    ├── Makefile                               <-- Phase II multi-target GNU Makefile (-std=c++17)
-    ├── README.md                              <-- Complete Phase II algorithmic specification
-    ├── scenario_benchmark_results.csv         <-- Dynamically exported benchmark metrics (4 scenarios)
-    ├── assignment_plan_report.csv             <-- Exported triage backlog and assignment report
-    ├── data/
-    │   ├── synthetic_enterprise_issues.csv    <-- 120 synthetic enterprise defect issues
-    │   └── synthetic_enterprise_developers.csv<-- 16 maintainers with diverse skill matrices
-    ├── include/
-    │   ├── core/                              <-- Models, parser, sorting, visualizer, reductions, report exporter
+├── Phase_II/                                  <-- Phase II Extended Workbench (50 Marks)
+│   ├── CMakeLists.txt                         <-- Phase II build automation (C++17)
+│   ├── Makefile                               <-- Phase II multi-target GNU Makefile (-std=c++17)
+│   ├── include/
+│   │   ├── core/                              <-- Core models, parser, sorting, visualizer, reductions, exporter
+│   │   └── algorithms/                        <-- Units II-VI algorithmic headers (D&C, Greedy, DP, B&B, Flow, Strings, CRT)
+│   ├── src/main.cpp                           <-- Phase II comprehensive 11-module workbench CLI
+│   ├── src/scenario_benchmarks.cpp            <-- 4 Mandated demonstration stress scenarios runner
+│   ├── tests/                                 <-- 5 Automated test suites (Chunks 2 through 6)
+│   └── data/                                  <-- Synthetic enterprise defect issues and developer matrices
+│
+├── docs/                                      <-- Authoritative Academic Submission Dossier
+│   ├── AutoTriage_DAA_Final_Project_Report.pdf<-- Comprehensive 25-page final technical report
+│   ├── AutoTriage_DAA_Final_Presentation.pptx <-- 12-slide product story presentation with speaker notes
+│   ├── Declaration.pdf                        <-- Signed student declaration of academic integrity
+│   └── viva_defense_toolkit.md                <-- Examiner Q&A, paper traces, and live coding templates
+│
+└── screenshots/                               <-- 14 Genuine High-Resolution Terminal Evidence Captures
+```
     │   └── algorithms/                        <-- Divide & Conquer, Greedy, DP, Backtracking, B&B, Flow, Strings, CRT, Online Streaming
     ├── src/
     │   ├── main.cpp                           <-- Interactive 11-module CLI workbench
