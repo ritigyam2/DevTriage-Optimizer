@@ -21,7 +21,7 @@ Phase_I/
 ├── proposal.md                 # Official 1-Page Approved Proposal
 ├── include/
 │   ├── models.hpp              # Domain structs: Issue, Developer, SortStats, MatchingStats
-│   ├── parser.hpp              # Defensive CSV parser with 3-color DFS cycle detection
+│   ├── parser.hpp              # Defensive CSV parser with prerequisite-cycle validation
 │   ├── sorting.hpp             # Student Merge Sort, Quick Sort (Median-3/Random/First), Binary Search
 │   └── matching.hpp            # Student Maximum Bipartite Matching (Kuhn's DFS) & Greedy Matching
 ├── src/
