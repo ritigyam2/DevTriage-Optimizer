@@ -1,0 +1,121 @@
+id,title,severity,estimated_hours,business_value,deadline_day,required_skills,prerequisites
+101,CVE-2026-1044: Use-after-free in eBPF verifier kernel subsystem,5,16,98.0,2,Kernel;C;Memory;Security,
+102,CVE-2026-2189: Remote code execution in TLS 1.3 handshake state machine,5,24,99.0,1,Security;Crypto;TLS;Networking,101
+103,Silent data corruption on dirty cache flush in ext4 block journaling,5,20,95.0,3,Database;Storage;C;Systems,
+104,Deadlock in Raft leader election during network partition split-brain,5,18,96.0,2,Distributed;Raft;Consensus;Networking,
+105,CVE-2026-3390: Out-of-bounds heap write in V8 JIT compiler optimization,5,22,97.0,2,Runtime;Memory;Compiler;V8,
+106,Kernel panic in Pod sandbox CNI network bridge teardown,5,14,94.0,3,Kubernetes;Cloud;Docker;Networking,
+107,Zero-day vulnerability in OpenSSL ASN.1 decoder stack overflow,5,26,100.0,1,Security;Crypto;C;Audit,
+108,B-tree index page corruption on concurrent multithreaded split,5,16,95.0,3,Database;Storage;SQL;Indexing,103
+109,CPU core starvation in spinlock under NUMA memory node scheduling,5,12,92.0,4,Kernel;C;Memory;Concurrency,
+110,LLVM Backend crash generating AVX-512 vector register spills,5,16,93.0,3,Compiler;LLVM;Optimization;Assembly,
+111,Memory leak in TCP socket buffer pool under high connection churn,4,14,82.0,5,Networking;Sockets;C++;Systems,
+112,Double-free vulnerability in WebSocket connection upgrade teardown,4,10,85.0,4,Networking;C++;Memory;Security,102
+113,Lock contention in WAL write-ahead log commit transaction pipeline,4,16,88.0,5,Database;Storage;SQL;Concurrency,108
+114,Garbage collection stop-the-world pause exceeds 250ms SLA,4,20,80.0,6,Runtime;Memory;GC;V8,105
+115,OOM killer prematurely terminates healthy container worker daemon,4,12,78.0,5,Kubernetes;Cloud;Docker;DevOps,106
+116,Incorrect instruction reordering in Clang -O3 loop vectorizer,4,18,86.0,4,Compiler;LLVM;Optimization;Assembly,110
+117,Race condition in thread pool work-stealing queue dequeue,4,14,84.0,5,C++;Systems;Concurrency;POSIX,109
+118,Electron UI white screen flash during hardware acceleration fallback,4,12,76.0,7,Frontend;Electron;Rendering;Performance,
+119,Etcd key-value compaction blocks concurrent read transactions,4,16,83.0,6,Distributed;Raft;Consensus;Database,104
+120,Timing side-channel leak in ECDSA signature nonce generation,4,18,89.0,4,Security;Crypto;Audit;Fuzzing,107
+121,Add support for io_uring asynchronous disk I/O in worker engine,3,20,68.0,8,Kernel;C;Storage;Systems,
+122,Implement Brotli dynamic HTTP response compression filter,3,10,60.0,9,Networking;HTTP;C++;Performance,
+123,Optimize AST parser memory allocation using arena allocators,3,16,65.0,8,Compiler;LLVM;Memory;Optimization,
+124,Expose Prometheus latency metrics for DB connection pool,3,8,55.0,10,Cloud;Docker;DevOps;CI,
+125,Support multi-column composite index scan in query planner,3,18,67.0,9,Database;SQL;Indexing;Storage,113
+126,Add dark mode theme palette and CSS variable tokens,3,10,50.0,11,Frontend;TypeScript;React;Electron,
+127,Refactor session token storage to use secure HTTP-only cookies,3,12,62.0,8,Security;Auth;Audit;HTTP,120
+128,Add fuzz testing target for RPC protobuf deserializer,3,14,64.0,9,Security;Fuzzing;Audit;C++,
+129,Reduce virtual DOM reconciliation passes on issue grid scroll,3,12,58.0,10,Frontend;React;Rendering;Performance,118
+130,Implement adaptive backoff retry policy for downstream API client,3,8,52.0,11,C++;Networking;Systems;Testing,
+131,Migrate build configuration from CMake 3.10 to CMake 3.25,2,8,38.0,12,CI;DevOps;Automation;Docker,
+132,Update bundled timezone database to IANA 2026a,2,4,30.0,14,POSIX;Systems;C;Testing,
+133,Add CLI flag --json-compact to suppress indentation in output,2,4,32.0,13,POSIX;Debugging;C++;Systems,
+134,Improve tooltip accessibility and keyboard navigation tabindex,2,6,35.0,14,Frontend;TypeScript;React;Electron,126
+135,Add benchmark suite for SIMD string search functions,2,10,42.0,12,C++;Performance;Optimization;Testing,
+136,Cache pre-compiled regular expressions in rule evaluation engine,2,6,36.0,13,C++;Systems;Performance;POSIX,
+137,Upgrade SQLite embedded fallback driver to version 3.48,2,6,34.0,14,Database;SQL;C;Storage,
+138,Add shell completion scripts for zsh and fish,2,4,28.0,15,POSIX;DevOps;Automation;Testing,
+139,Fix typo in diagnostic warning message for unaligned pointer access,2,2,20.0,15,Compiler;LLVM;Testing;POSIX,
+140,Support custom user avatar image upload cropping in settings modal,2,8,39.0,14,Frontend;React;TypeScript;Rendering,
+141,Align copyright notice year in source headers to 2026,1,2,12.0,16,Automation;CI;Testing;POSIX,
+142,Remove deprecated legacy config parser stub functions,1,4,15.0,15,C++;Debugging;POSIX;Testing,
+143,Fix markdown formatting in CONTRIBUTING.md table of contents,1,2,10.0,16,CI;Automation;Testing;Docs,
+144,Standardize error log color codes in terminal runner,1,3,14.0,15,POSIX;Debugging;C++;Testing,
+145,Clean up unused SVG icons from asset bundle directory,1,2,11.0,16,Frontend;React;Electron;Rendering,
+146,Mitigate cross-tenant noisy neighbor CPU throttling in Database,2,10,46.0,15,Database;Storage;C;Systems,
+147,Audit cryptographic signature verification for replay attack protection in Networking,3,13,54.0,13,Networking;Sockets;HTTP;TLS,
+148,Implement zero-copy memory-mapped ring buffer in Frontend,4,16,77.0,7,Frontend;React;Rendering;Performance,
+149,Resolve thread affinity thrashing on high-core server architectures in Cloud,5,19,100.0,5,Cloud;Kubernetes;Networking;DevOps,
+150,Buffer allocation invariant violation during high-throughput streaming in Compiler,1,22,18.0,18,Compiler;LLVM;Optimization;Assembly,140
+151,Fix edge-case segfault when handling null pointer callback in Distributed,2,25,41.0,16,Distributed;Raft;Consensus;Database,
+152,Optimize lock-free ring buffer read throughput for Kernel,3,4,64.0,10,Kernel;Memory;POSIX;Concurrency,
+153,Add regression test suite covering concurrent race conditions in Security,4,7,72.0,8,Security;Crypto;Auth;Audit,
+154,Refactor legacy telemetry collector to reduce memory footprint in Database,5,10,95.0,6,Database;SQL;Concurrency;Storage,
+155,Fix socket leak on unexpected remote peer reset in Networking,1,13,28.0,19,Networking;Sockets;C++;Performance,
+156,Mitigate cross-tenant noisy neighbor CPU throttling in Frontend,2,16,36.0,13,Frontend;TypeScript;React;Electron,146
+157,Audit cryptographic signature verification for replay attack protection in Cloud,3,19,59.0,11,Docker;DevOps;CI;Automation,
+158,Implement zero-copy memory-mapped ring buffer in Compiler,4,22,82.0,9,Compiler;Optimization;Assembly;C++,
+159,Resolve thread affinity thrashing on high-core server architectures in Distributed,5,25,90.0,7,Distributed;Raft;Consensus;Networking,
+160,Buffer allocation invariant violation during high-throughput streaming in Kernel,1,4,23.0,16,Kernel;C;Systems;Debugging,
+161,Fix edge-case segfault when handling null pointer callback in Security,2,7,46.0,14,Security;Vulnerability;Audit;Testing,
+162,Optimize lock-free ring buffer read throughput for Database,3,10,54.0,12,Database;Storage;SQL;Indexing,152
+163,Add regression test suite covering concurrent race conditions in Networking,4,13,77.0,10,Networking;Distributed;C++;Systems,
+164,Refactor legacy telemetry collector to reduce memory footprint in Frontend,5,16,100.0,4,Frontend;Electron;Rendering;Performance,
+165,Fix socket leak on unexpected remote peer reset in Cloud,1,19,18.0,17,Kubernetes;Cloud;Docker;DevOps,
+166,Mitigate cross-tenant noisy neighbor CPU throttling in Compiler,2,22,41.0,15,Compiler;LLVM;Memory;Optimization,
+167,Audit cryptographic signature verification for replay attack protection in Distributed,3,25,64.0,13,Distributed;Networking;Systems;C++,
+168,Implement zero-copy memory-mapped ring buffer in Kernel,4,4,72.0,7,Kernel;C;Memory;Concurrency,158
+169,Resolve thread affinity thrashing on high-core server architectures in Security,5,7,95.0,5,Security;Fuzzing;Audit;C++,
+170,Buffer allocation invariant violation during high-throughput streaming in Database,1,10,28.0,18,Database;Storage;C;Systems,
+171,Fix edge-case segfault when handling null pointer callback in Networking,2,13,36.0,16,Networking;Sockets;HTTP;TLS,
+172,Optimize lock-free ring buffer read throughput for Frontend,3,16,59.0,10,Frontend;React;Rendering;Performance,
+173,Add regression test suite covering concurrent race conditions in Cloud,4,19,82.0,8,Cloud;Kubernetes;Networking;DevOps,
+174,Refactor legacy telemetry collector to reduce memory footprint in Compiler,5,22,90.0,6,Compiler;LLVM;Optimization;Assembly,164
+175,Fix socket leak on unexpected remote peer reset in Distributed,1,25,23.0,19,Distributed;Raft;Consensus;Database,
+176,Mitigate cross-tenant noisy neighbor CPU throttling in Kernel,2,4,46.0,13,Kernel;Memory;POSIX;Concurrency,
+177,Audit cryptographic signature verification for replay attack protection in Security,3,7,54.0,11,Security;Crypto;Auth;Audit,
+178,Implement zero-copy memory-mapped ring buffer in Database,4,10,77.0,9,Database;SQL;Concurrency;Storage,
+179,Resolve thread affinity thrashing on high-core server architectures in Networking,5,13,100.0,7,Networking;Sockets;C++;Performance,
+180,Buffer allocation invariant violation during high-throughput streaming in Frontend,1,16,18.0,16,Frontend;TypeScript;React;Electron,170
+181,Fix edge-case segfault when handling null pointer callback in Cloud,2,19,41.0,14,Docker;DevOps;CI;Automation,
+182,Optimize lock-free ring buffer read throughput for Compiler,3,22,64.0,12,Compiler;Optimization;Assembly;C++,
+183,Add regression test suite covering concurrent race conditions in Distributed,4,25,72.0,10,Distributed;Raft;Consensus;Networking,
+184,Refactor legacy telemetry collector to reduce memory footprint in Kernel,5,4,95.0,4,Kernel;C;Systems;Debugging,
+185,Fix socket leak on unexpected remote peer reset in Security,1,7,28.0,17,Security;Vulnerability;Audit;Testing,
+186,Mitigate cross-tenant noisy neighbor CPU throttling in Database,2,10,36.0,15,Database;Storage;SQL;Indexing,176
+187,Audit cryptographic signature verification for replay attack protection in Networking,3,13,59.0,13,Networking;Distributed;C++;Systems,
+188,Implement zero-copy memory-mapped ring buffer in Frontend,4,16,82.0,7,Frontend;Electron;Rendering;Performance,
+189,Resolve thread affinity thrashing on high-core server architectures in Cloud,5,19,90.0,5,Kubernetes;Cloud;Docker;DevOps,
+190,Buffer allocation invariant violation during high-throughput streaming in Compiler,1,22,23.0,18,Compiler;LLVM;Memory;Optimization,
+191,Fix edge-case segfault when handling null pointer callback in Distributed,2,25,46.0,16,Distributed;Networking;Systems;C++,
+192,Optimize lock-free ring buffer read throughput for Kernel,3,4,54.0,10,Kernel;C;Memory;Concurrency,182
+193,Add regression test suite covering concurrent race conditions in Security,4,7,77.0,8,Security;Fuzzing;Audit;C++,
+194,Refactor legacy telemetry collector to reduce memory footprint in Database,5,10,100.0,6,Database;Storage;C;Systems,
+195,Fix socket leak on unexpected remote peer reset in Networking,1,13,18.0,19,Networking;Sockets;HTTP;TLS,
+196,Mitigate cross-tenant noisy neighbor CPU throttling in Frontend,2,16,41.0,13,Frontend;React;Rendering;Performance,
+197,Audit cryptographic signature verification for replay attack protection in Cloud,3,19,64.0,11,Cloud;Kubernetes;Networking;DevOps,
+198,Implement zero-copy memory-mapped ring buffer in Compiler,4,22,72.0,9,Compiler;LLVM;Optimization;Assembly,188
+199,Resolve thread affinity thrashing on high-core server architectures in Distributed,5,25,95.0,7,Distributed;Raft;Consensus;Database,
+200,Buffer allocation invariant violation during high-throughput streaming in Kernel,1,4,28.0,16,Kernel;Memory;POSIX;Concurrency,
+201,Fix edge-case segfault when handling null pointer callback in Security,2,7,36.0,14,Security;Crypto;Auth;Audit,
+202,Optimize lock-free ring buffer read throughput for Database,3,10,59.0,12,Database;SQL;Concurrency;Storage,
+203,Add regression test suite covering concurrent race conditions in Networking,4,13,82.0,10,Networking;Sockets;C++;Performance,
+204,Refactor legacy telemetry collector to reduce memory footprint in Frontend,5,16,90.0,4,Frontend;TypeScript;React;Electron,194
+205,Fix socket leak on unexpected remote peer reset in Cloud,1,19,23.0,17,Docker;DevOps;CI;Automation,
+206,Mitigate cross-tenant noisy neighbor CPU throttling in Compiler,2,22,46.0,15,Compiler;Optimization;Assembly;C++,
+207,Audit cryptographic signature verification for replay attack protection in Distributed,3,25,54.0,13,Distributed;Raft;Consensus;Networking,
+208,Implement zero-copy memory-mapped ring buffer in Kernel,4,4,77.0,7,Kernel;C;Systems;Debugging,
+209,Resolve thread affinity thrashing on high-core server architectures in Security,5,7,100.0,5,Security;Vulnerability;Audit;Testing,
+210,Buffer allocation invariant violation during high-throughput streaming in Database,1,10,18.0,18,Database;Storage;SQL;Indexing,200
+211,Fix edge-case segfault when handling null pointer callback in Networking,2,13,41.0,16,Networking;Distributed;C++;Systems,
+212,Optimize lock-free ring buffer read throughput for Frontend,3,16,64.0,10,Frontend;Electron;Rendering;Performance,
+213,Add regression test suite covering concurrent race conditions in Cloud,4,19,72.0,8,Kubernetes;Cloud;Docker;DevOps,
+214,Refactor legacy telemetry collector to reduce memory footprint in Compiler,5,22,95.0,6,Compiler;LLVM;Memory;Optimization,
+215,Fix socket leak on unexpected remote peer reset in Distributed,1,25,28.0,19,Distributed;Networking;Systems;C++,
+216,Mitigate cross-tenant noisy neighbor CPU throttling in Kernel,2,4,36.0,13,Kernel;C;Memory;Concurrency,206
+217,Audit cryptographic signature verification for replay attack protection in Security,3,7,59.0,11,Security;Fuzzing;Audit;C++,
+218,Implement zero-copy memory-mapped ring buffer in Database,4,10,82.0,9,Database;Storage;C;Systems,
+219,Resolve thread affinity thrashing on high-core server architectures in Networking,5,13,90.0,7,Networking;Sockets;HTTP;TLS,
+220,Buffer allocation invariant violation during high-throughput streaming in Frontend,1,16,23.0,16,Frontend;React;Rendering;Performance,
