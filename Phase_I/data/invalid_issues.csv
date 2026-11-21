@@ -1,0 +1,4 @@
+id,title,severity,estimated_hours,business_value,deadline_day,required_skills,prerequisites
+101,Invalid severity score,9,10,50.0,5,C++,
+102,Negative estimated hours,-8,40.0,3,Security,
+103,Zero issue id,0,4,20.0,1,Docs,

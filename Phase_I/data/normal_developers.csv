@@ -1,0 +1,9 @@
+id,name,available_hours,skills
+1,Alice_KernelLead,40,Kernel;C++;Concurrency;Audio
+2,Bob_SecEngineer,35,Security;C++;Networking;Go
+3,Charlie_NetArchitect,40,Networking;C++;Go;Unicode
+4,Diana_DBA,30,Database;SQL;C++
+5,Evan_DevOpsSRE,35,DevOps;Docker;Go;Networking
+6,Fiona_FullStack,35,Frontend;React;CSS;Web;Security
+7,George_SystemsDev,30,C++;Kernel;Concurrency
+8,Hannah_SecSpecialist,25,Security;Frontend;Web;Go
