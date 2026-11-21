@@ -1,0 +1,19 @@
+# Compiled binaries and object files
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# System and temporary logs
+*.log
+.system_generated/
+scratch/
+__pycache__/
+*.pyc
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
+*~

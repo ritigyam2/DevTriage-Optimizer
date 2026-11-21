@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Times New Roman;}{\f2\fnil\fcharset161 Times New Roman;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue255;\red217\green217\blue217;\red31\green78\blue120;\red0\green255\blue255;\red234\green242\blue248;\red64\green64\blue64;\red242\green242\blue242;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\cf1\b\f0\fs36\lang9 Design and Analysis of Algorithms\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\f1\fs24 Purpose and Expected Standard\par
+
+\pard\sa60\sl240\slmult1\qj\b0 This handbook provides fifty substantial projects that translate the complete Design and Analysis of Algorithms syllabus into industry-oriented C or C++ products. Every project is designed for an eight-week development period and requires students to move beyond a single algorithm: they must model a real problem, implement alternative strategies, prove or justify correctness, measure time and space behaviour, and explain which approach is practical under different operating conditions.\par
+The title, ten-point explanation, and expected product for every project are self-contained. The Common Syllabus Implementation Standard below is mandatory for every student and forms part of every project briefly, even when a domain naturally emphasizes only some algorithms.\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\b Common Syllabus Implementation Standard for Every Project\par
+\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat4\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clcbpat4\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf2 Syllabus area\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Mandatory evidence in the submission\cf0\b0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Algorithm foundations and analysis\cf0\f0\fs22\cell\cf1\f1\fs24 Define inputs, outputs, constraints, invariants and edge cases; document algorithm characteristics; collect operation counts, execution time and memory use; express best, average and worst cases with O, \f2\lang1032\'d9 and \'c8 notation.\cf0\f0\fs22\lang9\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Recurrence relations\cf0\f0\fs22\cell\cf1\f1\fs24 Formulate and solve recurrences for selected recursive modules using iteration, substitution, recursion trees and the Master Theorem, stating when the theorem is not applicable.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Divide and conquer\cf0\f0\fs22\cell\cf1\f1\fs24 Implement and benchmark iterative and recursive binary search, merge sort, quick sort, a maximum-subarray analysis, fast exponentiation, celebrity identification, and classical versus Strassen matrix multiplication using project data or a mapped analytical subproblem.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Greedy methods\cf0\f0\fs22\cell\cf1\f1\fs24 Use activity selection or interval partitioning for scheduling, fractional-knapsack reasoning for prioritized allocation, Huffman coding for compression, Dijkstra for non-negative shortest paths, and Prim and Kruskal for minimum spanning infrastructure.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Dynamic programming\cf0\f0\fs22\cell\cf1\f1\fs24 Implement 0/1 knapsack, matrix-chain multiplication, longest common subsequence, optimal binary search tree, Bellman-Ford, Floyd-Warshall and a small-instance travelling salesperson solver; compare dynamic programming with divide-and-conquer and greedy choices.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Backtracking and branch and bound\cf0\f0\fs22\cell\cf1\f1\fs24 Implement N-Queens as a constraint-solving validation exercise, sum of subsets, 0/1 knapsack by backtracking, and FIFO, LIFO and least-cost branch-and-bound variants for knapsack or travelling salesperson decisions.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Flow and matching\cf0\f0\fs22\cell\cf1\f1\fs24 Model a capacity network and implement Ford-Fulkerson; derive a maximum bipartite matching module for assignment between two entity groups.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Number and polynomial representation\cf0\f0\fs22\cell\cf1\f1\fs24 Implement a Chinese Remainder Theorem utility and demonstrate at least one project-relevant use such as distributed counters, modular verification, hashing experiments or reconstruction of partitioned results.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 String matching\cf0\f0\fs22\cell\cf1\f1\fs24 Implement and compare naive matching, Rabin-Karp, finite-automaton matching and Knuth-Morris-Pratt on domain text, identifiers, event streams or encoded sequences.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4144\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx10152 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Complexity classes and reducibility\cf0\f0\fs22\cell\cf1\f1\fs24 Classify major decision versions as P, NP, NP-complete or NP-hard where defensible; provide one clear polynomial-time reduction argument or mapping for the project\rquote s difficult optimization component.\cf0\f0\fs22\cell\row 
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\cf1\b\f1\fs24 Required Engineering Practices\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li360\sa60\sl240\slmult1\tx360\b0 Use C17 or C++17 or later, modular source files, clear interfaces, defensive input validation and deterministic builds with Make or CMake.\par
+{\pntext\f3\'B7\tab}Do not use library calls as replacements for the required core algorithms; standard containers may be used, but the assessed algorithms must be implemented and tested by the student.\par
+{\pntext\f3\'B7\tab}Provide automated unit tests, integration tests, adversarial cases and reproducible benchmark datasets of increasing size.\par
+{\pntext\f3\'B7\tab}Separate the domain model, algorithm implementations, experiment runner, persistence layer and user interface so that algorithms can be swapped fairly.\par
+{\pntext\f3\'B7\tab}Record correctness evidence, empirical complexity graphs or tables, limitations, ethical or safety concerns, and a reasoned algorithm-selection guide.\par
+{\pntext\f3\'B7\tab}Maintain a Git repository with issues, branches, meaningful commits, code review evidence, release tags and a concise installation guide.\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\b Suggested Eight-Week Execution Plan\par
+\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf2 Period\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Milestone\cf0\b0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 1\cf0\f0\fs22\cell\cf1\f1\fs24 Requirements, datasets, constraints, use cases, architecture and baseline tests.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 2\cf0\f0\fs22\cell\cf1\f1\fs24 Analysis framework, sorting, searching, recurrences and divide-and-conquer modules.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 3\cf0\f0\fs22\cell\cf1\f1\fs24 Greedy scheduling, compression, shortest path and spanning-tree modules.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 4\cf0\f0\fs22\cell\cf1\f1\fs24 Dynamic programming modules and first cross-paradigm comparison.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 5\cf0\f0\fs22\cell\cf1\f1\fs24 Backtracking, branch-and-bound, pruning and exact small-instance solvers.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 6\cf0\f0\fs22\cell\cf1\f1\fs24 Maximum flow, bipartite matching, CRT and string-matching modules.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 7\cf0\f0\fs22\cell\cf1\f1\fs24 Integration, complexity classification, reduction argument, stress tests and optimization.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx4968\clcbpat8\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\cf1\f1\fs24 Week 8\cf0\f0\fs22\cell\cf1\f1\fs24 Final validation, documentation, demonstration, viva preparation and release packaging.\cf0\f0\fs22\cell\row 
+\pard\sa60\sl240\slmult1\cf1\f1\fs24\page\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\b Project Briefs\par
+
+\pard\sa60\sl240\slmult1\qj\b0 Each brief below is independently assignable. \ldblquote Complete syllabus workbench\rdblquote  means the Common Syllabus Implementation Standard is a required, assessed component of that project.\page\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\b Project 50  Open Source Issue Triage and Developer Assignment Tool\par
+
+\pard\sa60\sl240\slmult1\qj Duration: \b0 8 weeks  |  \b Implementation: \b0 C or C++  |  \b Mode: \b0 Student product with individual algorithm ownership\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\b Project Explanation in Ten Lines\par
+
+\pard\fi-259\li259\sa30\sl240\slmult1\qj 1. \b0 Build an industry-style software engineering system representing issues, labels, code modules, developers and dependency links through typed records, arrays, trees and weighted or capacitated graphs.\par
+\b 2. \b0 The core objective is to match issues to developers and prioritize dependency-aware release work, subject to explicit constraints, validation rules and measurable service indicators.\par
+\b 3. \b0 Organize and retrieve workloads with student implementations of merge sort, quick sort, iterative and recursive binary search, and domain-specific indices.\par
+\b 4. \b0 Create divide-and-conquer modules for maximum subarrays, fast powering, celebrity discovery, and classical versus Strassen matrix multiplication.\par
+\b 5. \b0 Map activity selection, interval partitioning, Huffman coding, Dijkstra, Prim and Kruskal to scheduling, compression, routing and infrastructure decisions.\par
+\b 6. \b0 Build dynamic-programming alternatives using 0/1 knapsack, matrix chains, LCS, optimal BST, Bellman-Ford, Floyd-Warshall and bounded TSP instances.\par
+\b 7. \b0 Use N-Queens and subset problems to validate backtracking, then compare FIFO, LIFO and least-cost branch-and-bound for an exact project decision.\par
+\b 8. \b0 Model capacity allocation with Ford-Fulkerson and implement maximum bipartite matching for a meaningful two-sided assignment.\par
+\b 9. \b0 Add a Chinese Remainder Theorem utility and benchmark naive, Rabin-Karp, finite-automaton and KMP matching on domain text or event sequences.\par
+\b 10. \b0 Report recurrence solutions, asymptotic and empirical results, correctness evidence, complexity-class analysis, a reduction mapping and the recommended production strategy.\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\b Expected Product\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li360\sa60\sl240\slmult1\qj\tx360\b0 A portable C/C++ application delivering a repository triage prototype with text search and assignment plans.\par
+{\pntext\f3\'B7\tab}A reusable library containing every mandatory syllabus implementation behind consistent interfaces.\par
+{\pntext\f3\'B7\tab}A menu-driven CLI or optional desktop interface for loading data, selecting algorithms, running scenarios and exporting CSV or JSON.\par
+{\pntext\f3\'B7\tab}A benchmark runner comparing time, memory, solution quality and scalability on small, medium, large and adversarial datasets.\par
+{\pntext\f3\'B7\tab}A test suite with small-instance oracles, unit and integration tests, edge cases, invalid inputs and regression data.\par
+{\pntext\f3\'B7\tab}A Git repository with source, Makefile or CMake, sample data, user and design guides, complexity report, demonstration script and release tag.\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\b Minimum Demonstration Scenario\par
+
+\pard\sa60\sl240\slmult1\qj\b0 Demonstrate at least three realistic software engineering scenarios: normal operation, a capacity or constraint shock, and a large-data stress case. For the same input, compare at least two valid algorithmic strategies and explain differences in correctness, running time, memory use and solution quality.\par
+\page\par
+
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\b Recommended Assessment Rubric\par
+\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clcbpat4\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clcbpat4\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clcbpat4\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf2 Criterion\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Weight\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Evidence\cf0\b0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Problem modelling and requirements\cf0\f0\fs22\cell\cf1\f1\fs24 10%\cf0\f0\fs22\cell\cf1\f1\fs24 Correct entities, constraints, datasets, edge cases and measurable objectives.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Algorithm coverage and correctness\cf0\f0\fs22\cell\cf1\f1\fs24 30%\cf0\f0\fs22\cell\cf1\f1\fs24 Complete syllabus workbench, correct outputs, proofs or invariants and meaningful domain mapping.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Comparative analysis\cf0\f0\fs22\cell\cf1\f1\fs24 15%\cf0\f0\fs22\cell\cf1\f1\fs24 Asymptotic analysis, recurrence solutions, empirical benchmarks and justified selection.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Software engineering quality\cf0\f0\fs22\cell\cf1\f1\fs24 15%\cf0\f0\fs22\cell\cf1\f1\fs24 Modularity, coding standards, build system, version control, tests and error handling.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Industry product integration\cf0\f0\fs22\cell\cf1\f1\fs24 15%\cf0\f0\fs22\cell\cf1\f1\fs24 Usable workflow, realistic scenarios, input-output design, robustness and reproducibility.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcbpat6\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Documentation and complexity reasoning\cf0\f0\fs22\cell\cf1\f1\fs24 10%\cf0\f0\fs22\cell\cf1\f1\fs24 Design report, P/NP classification, reduction discussion, limitations and ethics.\cf0\f0\fs22\cell\row\trowd\trgaph108\trqc\trrh1\trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx3312\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx6624\clvertalc\clcfpat1\clcbpat2\clbrdrl\brdrw12\brdrs\brdrcf3\clbrdrt\brdrw12\brdrs\brdrcf3\clbrdrr\brdrw12\brdrs\brdrcf3\clbrdrb\brdrw12\brdrs\brdrcf3 \cellx9936 
+\pard\intbl\sa60\sl240\slmult1\qj\cf1\f1\fs24 Demonstration and viva\cf0\f0\fs22\cell\cf1\f1\fs24 5%\cf0\f0\fs22\cell\cf1\f1\fs24 Clear demonstration, individual ownership and ability to defend decisions.\cf0\f0\fs22\cell\row 
+\pard\keep\keepn\sb160\sa120\sl240\slmult1\qj\cf1\b\f1\fs24 Final Submission Checklist\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\fi-360\li360\sa60\sl240\slmult1\qj\tx360\b0 Compilable C/C++ source and automated build\par
+{\pntext\f3\'B7\tab}All mandatory algorithm implementations and mapping table\par
+{\pntext\f3\'B7\tab}Sample and generated datasets with licenses or provenance\par
+{\pntext\f3\'B7\tab}Unit, integration, regression and stress-test results\par
+{\pntext\f3\'B7\tab}Benchmark tables and graphs with hardware/compiler details\par
+{\pntext\f3\'B7\tab}Correctness and complexity report including recurrence solutions\par
+{\pntext\f3\'B7\tab}P, NP, NP-complete and NP-hard discussion with reduction mapping\par
+{\pntext\f3\'B7\tab}User guide, developer guide, architecture diagram and API notes\par
+{\pntext\f3\'B7\tab}Recorded demonstration or live demonstration script\par
+{\pntext\f3\'B7\tab}Git history, release tag and individual contribution statement\par
+}
+ 
