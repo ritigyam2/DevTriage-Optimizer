@@ -222,12 +222,5 @@ DevTriage-Optimizer/
 
 ---
 
-## Author & Academic Information
 
-* **Developer:** Ritigya Mishra
-* **SAP ID:** 590028115
-* **Program:** B.Tech — Computer Science & Engineering (B.Tech-CSE)
-* **Specialization:** Artificial Intelligence & Machine Learning (AI/ML), Batch B-9
-* **Institution:** Department of Computer Science & Engineering
-* **Course:** Design and Analysis of Algorithms (DAA — PBL)
 * **Project Reference:** Project 50: Open Source Issue Triage and Developer Assignment Tool
