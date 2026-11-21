@@ -11,10 +11,10 @@
    ```powershell
    cd "c:\Users\user\OneDrive\Desktop\DAA PROJECT"
    ```
-3. Have your printed copies of:
-   * [`DECLARATION_OF_ORIGINALITY.md`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/DECLARATION_OF_ORIGINALITY.md) (Signed by Ritigya Mishra).
-   * [`PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx).
-   * [`TEST_CASE_TABLE.md`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/TEST_CASE_TABLE.md).
+3. Have your digital or printed copies ready:
+   * [`AutoTriage_DAA_Final_Project_Report.pdf`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/AutoTriage_DAA_Final_Project_Report.pdf) (25-page comprehensive project report).
+   * [`AutoTriage_DAA_Final_Presentation.pptx`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/AutoTriage_DAA_Final_Presentation.pptx) (12-slide final evaluation deck).
+   * [`Declaration.pdf`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/AutoTriage-DAA/docs/Declaration.pdf) (Signed declaration of originality).
 
 ---
 
@@ -78,7 +78,7 @@ cd ..\Phase_II
 
 ## Minute 6:30 – 7:00 | Conclusion & Inviting Examiner Questions
 **What to Say:**
-> *"In summary, AutoTriage satisfies every requirement of the 46-lecture DAA syllabus, compiles with **zero warnings under -Wall -Wextra**, and is backed by our comprehensive Word project guide and viva defense toolkit.  
+> *"In summary, AutoTriage satisfies every requirement of the 46-lecture DAA syllabus, compiles with **zero warnings under -Wall -Wextra**, and is backed by our comprehensive final project report, presentation deck, and viva defense toolkit.  
 > I am now ready for code traces, whiteboard implementations, or any live modifications you would like me to perform. Thank you, Professor."*
 
 ---
