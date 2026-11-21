@@ -196,7 +196,7 @@ int main() {
     test_tsp_held_karp();
 
     std::cout << "\n=================================================================\n";
-    std::cout << "  ALL CHUNK 4 TESTS PASSED FLAWLESSLY! (100% SUCCESS RATE)\n";
+    std::cout << "  Test summary: 7/7 tests passed.\n";
     std::cout << "=================================================================\n\n";
     return 0;
 }

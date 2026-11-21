@@ -152,7 +152,7 @@ int main() {
     test_circular_prerequisite_detection();
 
     std::cout << "\n=================================================================\n";
-    std::cout << "  ALL 7 TEST SUITES PASSED! (100% SUCCESS RATE)\n";
+    std::cout << "  Test summary: 7/7 tests passed.\n";
     std::cout << "=================================================================\n\n";
 
     return 0;

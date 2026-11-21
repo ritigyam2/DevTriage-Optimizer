@@ -144,7 +144,7 @@ int main() {
     test_tsp_branch_and_bound();
 
     std::cout << "\n=================================================================\n";
-    std::cout << "  ALL CHUNK 5 TESTS PASSED FLAWLESSLY! (100% SUCCESS RATE)\n";
+    std::cout << "  Test summary: 5/5 tests passed.\n";
     std::cout << "=================================================================\n\n";
     return 0;
 }

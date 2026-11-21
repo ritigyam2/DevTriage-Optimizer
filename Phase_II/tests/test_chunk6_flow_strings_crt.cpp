@@ -134,7 +134,7 @@ int main() {
     test_complexity_reductions();
 
     std::cout << "\n=================================================================\n";
-    std::cout << "  ALL CHUNK 6 TESTS PASSED FLAWLESSLY! (100% SUCCESS RATE)\n";
+    std::cout << "  Test summary: 5/5 tests passed.\n";
     std::cout << "=================================================================\n\n";
     return 0;
 }

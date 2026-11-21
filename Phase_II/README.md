@@ -1,6 +1,6 @@
 # AutoTriage-DAA: Phase II Complete Integrated Workbench (Project 50)
 **Course:** Design and Analysis of Algorithms (DAA - PBL)  
-**Author:** Ritigya Mishra  
+**Author:** Ritigya Mishra | **SAP ID:** 590028115 | **Batch:** B-9 (AI/ML) | **Course:** B.Tech-CSE  
 **Implementation Standard:** C++17 (Strict ISO C++17 Offline Implementation)  
 
 ---

@@ -13,7 +13,7 @@
    ```
 3. Have your printed copies of:
    * [`DECLARATION_OF_ORIGINALITY.md`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/DECLARATION_OF_ORIGINALITY.md) (Signed by Ritigya Mishra).
-   * [`PROJECT_50_TOPPER_PROJECT_PLAN_AND_ARCHITECTURE_GUIDE.docx`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/PROJECT_50_TOPPER_PROJECT_PLAN_AND_ARCHITECTURE_GUIDE.docx).
+   * [`PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/PROJECT_50_FINAL_EVALUATION_DOSSIER_AND_ARCHITECTURE_GUIDE.docx).
    * [`TEST_CASE_TABLE.md`](file:///c:/Users/user/OneDrive/Desktop/DAA%20PROJECT/TEST_CASE_TABLE.md).
 
 ---
@@ -22,7 +22,7 @@
 **What to Say:**
 > *"Good morning, Professor. Today I am presenting **AutoTriage (Project 50)**: an enterprise-grade algorithmic workbench designed to solve maintainer burnout and triage latency in open-source software ecosystems.  
 > We have implemented **28 distinct first-principles algorithms** spanning all 6 units of the DAA curriculum—completely offline in C++17 with **zero external core libraries**.  
-> The system operates under a **Two-Tier Architecture**: Tier 1 solves the real-world triage bottleneck via Kuhn's Matching, 1D Knapsack DP, Dijkstra, KMP, and Online Preemptive Streaming; Tier 2 provides rigorous academic reference implementations for Strassen, N-Queens, Held-Karp TSP, and NP reductions."*
+> The system operates under a **Two-Tier Architecture**: Tier 1 solves the real-world triage bottleneck via Kuhn's Matching, 1D Knapsack DP, Dijkstra, KMP, and Online Preemptive Streaming; Tier 2 provides rigorous academic implementations for Strassen, N-Queens, Held-Karp TSP, and NP reductions."*
 
 ---
 

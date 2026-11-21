@@ -1,6 +1,6 @@
 # AutoTriage-DAA: Phase I Project Package (Project 50)
 **Course:** Design and Analysis of Algorithms (DAA - PBL)  
-**Author:** Ritigya Mishra  
+**Author:** Ritigya Mishra | **SAP ID:** 590028115 | **Batch:** B-9 (AI/ML) | **Course:** B.Tech-CSE  
 **Implementation Standard:** C++17 (Strict ISO C++17 Offline Implementation)  
 
 ---
@@ -110,7 +110,7 @@ Run `./test_runner.exe` to verify all 7 test suites pass with 100% success rate:
 [TEST 7] Running Circular Prerequisite Cycle Detection Test... PASSED! (Correctly rejected with: "Dependency cycle detected involving issue ID 1 -> 2 -> 1")
 
 =================================================================
-  ALL 7 TEST SUITES PASSED FLAWLESSLY! (100% SUCCESS RATE)
+  ALL 7 TEST SUITES PASSED SUCCESSFULLY! (100% SUCCESS RATE)
 =================================================================
 ```
 

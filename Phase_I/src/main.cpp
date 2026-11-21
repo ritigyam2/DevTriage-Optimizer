@@ -10,9 +10,11 @@
 
 void print_banner() {
     std::cout << "\n===============================================================================\n";
-    std::cout << "  PROJECT 50: OPEN SOURCE ISSUE TRIAGE & DEVELOPER ASSIGNMENT TOOL\n";
-    std::cout << "  PHASE I EVALUATION BENCHMARK & DEMONSTRATION CONSOLE (DAA - PBL | C++17)\n";
-    std::cout << "  Author: Ritigya Mishra | 100% Offline, First-Principles Implementation\n";
+    std::cout << "  AutoTriage-DAA\n";
+    std::cout << "  Open Source Issue Triage and Developer Assignment Tool\n\n";
+    std::cout << "  Design and Analysis of Algorithms -- PBL (Project 50)\n";
+    std::cout << "  Developed by: Ritigya Mishra | SAP ID: 590028115 | Batch: B-9 (AI/ML)\n";
+    std::cout << "  Course: B.Tech-CSE\n";
     std::cout << "===============================================================================\n\n";
 }
 

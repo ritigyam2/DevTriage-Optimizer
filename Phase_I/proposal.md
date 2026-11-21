@@ -1,8 +1,8 @@
 # Phase I Project Proposal: Open Source Issue Triage and Developer Assignment Tool
-**Author:** Ritigya Mishra | **Course:** Design and Analysis of Algorithms (DAA - PBL)  
-**Project ID:** Project 50  
-**Implementation Standard:** C++17 (100% Student-Authored Offline Implementation)  
-**Evaluation:** Phase I (25 / 25 Marks)  
+**Author:** Ritigya Mishra | **SAP ID:** 590028115 | **Batch:** B-9 (AI/ML) | **Course:** B.Tech-CSE  
+**Subject:** Design and Analysis of Algorithms (DAA - PBL) | **Project ID:** Project 50  
+**Implementation Standard:** ISO C++17 (100% Student-Authored Offline Implementation)  
+**Evaluation Target:** Phase I (25 Marks)  
 
 ---
 

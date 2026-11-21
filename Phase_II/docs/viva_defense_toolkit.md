@@ -296,7 +296,7 @@ pi[q]:      0   0   1   2   0   1   2   3   4
 
 ---
 
-## Part 3: Top 25 Toughest Viva Voce Questions & Professor-Grade Answers
+## Part 3: Top 25 Toughest Viva Voce Questions & Academic Model Answers
 
 ### Q1: What is the formal difference between $O(g(n))$, $\Omega(g(n))$, and $\Theta(g(n))$?
 > **Answer:**
