@@ -95,7 +95,7 @@ g++ -std=c++17 -O3 -Wall -Wextra -Iinclude src/scenario_benchmarks.cpp -o scenar
 | Unit & Lecture | Implemented Algorithm | File Location | Complexity Bounds | Domain Role in Project 50 |
 | :--- | :--- | :--- | :--- | :--- |
 | **Unit I (L1–L10)** | Asymptotic Analysis & Recurrences | `core/models.hpp`, `docs/final_report.md` | $O, \Omega, \Theta, o, \omega$ | Formal derivations for all recursive submodules via Master Theorem. |
-| **Unit II (L11–L12)** | Merge Sort & Quick Sort | `core/sorting.hpp` | Merge: $\Theta(n \log n)$<br/>Quick: Avg $\Theta(n \log n)$ | Backlog prioritization; Median-of-3 eliminates anti-quicksort attacks. |
+| **Unit II (L11–L12)** | Merge Sort & Quick Sort | `core/sorting.hpp` | Merge: $\Theta(n \log n)$<br/>Quick: Avg $\Theta(n \log n)$ | Backlog prioritization; Median-of-3 mitigates common poor-pivot cases (worst case remains $O(n^2)$). |
 | **Unit II (L13)** | Strassen's Matrix Multiplication | `algorithms/divide_and_conquer/strassen.hpp` | Classical: $O(n^3)$<br/>Strassen: $\Theta(n^{2.807})$ | Developer co-maintenance intensity matrix ($M = C \times C^T$). |
 | **Unit II (L14)** | Maximum Subarray Problem | `algorithms/divide_and_conquer/max_subarray.hpp` | D&C: $\Theta(n \log n)$<br/>Kadane: $\Theta(n)$ | Detects peak sprint bug surge / burnout interval from daily net churn. |
 | **Unit II (L15)** | Fast Exponentiation / Powering | `algorithms/divide_and_conquer/fast_power.hpp` | $\Theta(\log k)$ | Markov-chain prediction of issue lifecycles ($P^k$) across sprints. |

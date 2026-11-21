@@ -21,7 +21,7 @@ Phase_I/
 ├── proposal.md                 # Official 1-Page Approved Proposal
 ├── include/
 │   ├── models.hpp              # Domain structs: Issue, Developer, SortStats, MatchingStats
-│   ├── parser.hpp              # Defensive CSV/JSON parser with 3-color DFS cycle detection
+│   ├── parser.hpp              # Defensive CSV parser with 3-color DFS cycle detection
 │   ├── sorting.hpp             # Student Merge Sort, Quick Sort (Median-3/Random/First), Binary Search
 │   └── matching.hpp            # Student Maximum Bipartite Matching (Kuhn's DFS) & Greedy Matching
 ├── src/
@@ -85,7 +85,7 @@ Sorts issues by three hierarchical keys:
 ### 4.3 Quick Sort with Median-of-Three & Random Pivot
 * **Time Complexity:** Average $\Theta(n \log n)$; Worst-Case $O(n^2)$ if degenerate.
 * **Auxiliary Space:** $O(\log n)$ recursion stack.
-* **Pivot Attack Defense:** Implements **Median-of-Three** (inspects `low`, `mid`, `high`) and **Randomized** pivot selection, completely eliminating the $O(n^2)$ quadratic degradation on pre-sorted or reverse-sorted backlogs.
+* **Pivot Attack Defense:** Implements **Median-of-Three** (inspects `low`, `mid`, `high`) and **Randomized** pivot selection, mitigating common poor-pivot degradation on pre-sorted or reverse-sorted backlogs (noting that theoretical worst-case remains $O(n^2)$).
 
 ### 4.4 Maximum Bipartite Matching (Kuhn's Algorithm)
 * **Mechanism:** Constructs a bipartite graph where edges exist iff $\mathcal{S}_i \subseteq \mathcal{K}_j$ and developer available hours $\ge$ issue effort.
