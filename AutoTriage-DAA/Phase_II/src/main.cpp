@@ -80,7 +80,7 @@ int main() {
     while (true) {
         std::cout << "\n============================= MAIN WORKBENCH MENU =============================\n";
         std::cout << " 1. Backlog Triage & Multi-Key Stable Sorting (Merge Sort)\n";
-        std::cout << " 2. Developer Assignment Engine (Bipartite Flow Matching vs Greedy)\n";
+        std::cout << " 2. Developer-Issue Bipartite Assignment (Augmenting Path Flow Matching vs Greedy)\n";
         std::cout << " 3. Sprint Release Planning (0/1 Knapsack DP vs LC B&B vs Fractional)\n";
         std::cout << " 4. Code Review & CI Machine Scheduling (Activity Selection & Interval Partition)\n";
         std::cout << " 5. Architecture & Refactoring (Strassen, Dijkstra, MST, Floyd-Warshall)\n";
@@ -119,7 +119,9 @@ int main() {
                           << "Day " << issues[i].deadline_day << "\n";
             }
         } else if (choice == 2) {
-            std::cout << "\n>>> MODULE 2: CAPACITY-CONSTRAINED DEVELOPER ASSIGNMENT <<<\n";
+            std::cout << "\n>>> MODULE 2: DEVELOPER-ISSUE BIPARTITE ASSIGNMENT <<<\n";
+            std::cout << "[NOTE] The syllabus matching module models one-to-one issue/developer assignment (one issue per dev).\n"
+                      << "       Hour-based multi-issue sprint capacity is handled separately through capacity-planning algorithms.\n\n";
             int N = static_cast<int>(issues.size());
             int M = static_cast<int>(devs.size());
 
