@@ -1,7 +1,7 @@
 # Project 50: Open Source Issue Triage and Developer Assignment Tool (AutoTriage)
 
 **Design and Analysis of Algorithms (DAA - PBL)**  
-**Author:** Ritigya Mishra | **SAP ID:** 590028115 | **Batch:** B-9 (AI/ML) | **Course:** B.Tech-CSE  
+**Author:** Ritigya Mishra | **Batch:** B-9 (AI/ML) | **Course:** B.Tech-CSE  
 **Evaluation Standard:** Phase I (25 Marks) + Phase II (50 Marks) = 75 Marks  
 **Curriculum Alignment:** Complete 46-Lecture DAA Syllabus (Units I through VI)  
 **Strict Policy:** 100% Offline, Zero External Core Algorithm Libraries, Strict ISO C++17 Standard  
